@@ -1,0 +1,3 @@
+docker cp demo_small.sql airport-container:/var/lib/postgresql/demo_small.sql
+docker exec -it airport-container psql -U postgres -d demo
+\i /var/lib/postgresql/demo_small.sql
